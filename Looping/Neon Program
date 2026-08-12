@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int val= n*n;
+        
+        int sum=0;
+        while(val!=0){
+        int digit=val%10;
+        sum=sum+digit;
+        val=val/10;
+        }
+        
+        if(n==sum){
+        System.out.println("Neon");
+        }
+        else{
+            System.out.println("Not a Neon");
+        }
+}
+}
