@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int rev;
+        int sum=0;
+        int org=n;
+        while(n!=0){
+            int digit=n%10;
+            rev=digit*digit*digit;
+            sum=sum+rev;
+            n=n/10;
+            
+        }
+        if(org==sum)
+        System.out.println("Amstrong");
+        else
+        System.out.println("Not an Amstrong");
+}
+}
